@@ -42,7 +42,7 @@
     <Compile Include="GUI\DockingPortListView.cs" />
     <Compile Include="Models\BodyData.cs" />
     <Compile Include="Models\CrewData.cs" />
-    <Compile Include="ExpandedVesselInfo.cs" />
+    <Compile Include="GUI\ExpandedVesselInfo.cs" />
     <Compile Include="Models\DisplayItem.cs" />
     <Compile Include="Models\OrbitData.cs" />
     <Compile Include="Models\VesselData.cs" />
