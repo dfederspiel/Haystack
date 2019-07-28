@@ -37,18 +37,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Comparers.cs" />
-    <Compile Include="HaystackContinued.BottomButtons.cs" />
-    <Compile Include="HaystackContinued.DefaultScrollerView.cs" />
-    <Compile Include="HaystackContinued.DockingPortListView.cs" />
-    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.BodyData.cs" />
-    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.CrewData.cs" />
-    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.cs" />
-    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.DisplayItem.cs" />
-    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.OrbitData.cs" />
-    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.VesselData.cs" />
-    <Compile Include="HaystackContinued.GroupedScrollerView.cs" />
-    <Compile Include="HaystackContinued.ResizeHandle.cs" />
-    <Compile Include="HaystackContinued.VesselInfoView.cs" />
+    <Compile Include="GUI\BottomButtons.cs" />
+    <Compile Include="GUI\DefaultScrollerView.cs" />
+    <Compile Include="GUI\DockingPortListView.cs" />
+    <Compile Include="Models\BodyData.cs" />
+    <Compile Include="Models\CrewData.cs" />
+    <Compile Include="ExpandedVesselInfo.cs" />
+    <Compile Include="Models\DisplayItem.cs" />
+    <Compile Include="Models\OrbitData.cs" />
+    <Compile Include="Models\VesselData.cs" />
+    <Compile Include="GUI\GroupedScrollerView.cs" />
+    <Compile Include="GUI\ResizeHandle.cs" />
+    <Compile Include="GUI\VesselInfoView.cs" />
     <Compile Include="HaystackScenarioModule.cs" />
     <Compile Include="HSVesselType.cs" />
     <Compile Include="InstallChecker.cs" />
@@ -66,7 +66,7 @@
     <Compile Include="DataManager.cs" />
     <Compile Include="StockSettings.cs" />
     <Compile Include="ToolbarRegistration.cs" />
-    <Compile Include="HaystackContinued.VesselListController.cs" />
+    <Compile Include="VesselListController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
