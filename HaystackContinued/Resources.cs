@@ -288,12 +288,12 @@ namespace HaystackReContinued
 
             // Main window
             winStyle = new GUIStyle(GUI.skin.window);
-            winStyle.fontSize = 10;
+            winStyle.fontSize = 12;
             winStyle.normal.textColor = XKCDColors.LightGrey;
 
             // resize button
             resizeBoxStyle = new GUIStyle(GUI.skin.box);
-            resizeBoxStyle.fontSize = 10;
+            resizeBoxStyle.fontSize = 12;
             resizeBoxStyle.normal.textColor = XKCDColors.LightGrey;
 
             //tooltip
@@ -398,7 +398,7 @@ namespace HaystackReContinued
             buttonRenameStyle.normal.textColor = XKCDColors.LightGrey;
             buttonRenameStyle.onActive.textColor = XKCDColors.LightGrey;
             buttonRenameStyle.onHover.textColor = XKCDColors.LightGrey;
-            buttonRenameStyle.fontSize = 11;
+            buttonRenameStyle.fontSize = 12;
 
 
             buttonTerminateStyle = new GUIStyle(GUI.skin.label);
@@ -427,7 +427,7 @@ namespace HaystackReContinued
 
             textListHeaderStyle = new GUIStyle(GUI.skin.label);
             textListHeaderStyle.normal.textColor = "#f4eac0".ToColor();
-            textListHeaderStyle.fontSize = 14;
+            textListHeaderStyle.fontSize = 12;
             textListHeaderStyle.fontStyle = FontStyle.Bold;
             textListHeaderStyle.margin = new RectOffset(6, 6, 2, 2);
             textListHeaderStyle.padding = new RectOffset(0, 0, 0, 2);
@@ -441,7 +441,7 @@ namespace HaystackReContinued
 
             textSituationStyle = new GUIStyle(GUI.skin.label);
             textSituationStyle.normal.textColor = XKCDColors.LightGrey;
-            textSituationStyle.fontSize = 11;
+            textSituationStyle.fontSize = 12;
             textSituationStyle.fontStyle = FontStyle.Normal;
             textSituationStyle.margin = new RectOffset(6, 6, 0, 1);
             textSituationStyle.padding = new RectOffset(0, 0, 0, 0);

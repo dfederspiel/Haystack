@@ -36,14 +36,27 @@
     <RunPostBuildEvent>Always</RunPostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="AssemblyVersion.cs">
+    <Compile Include="Comparers.cs" />
+    <Compile Include="HaystackContinued.BottomButtons.cs" />
+    <Compile Include="HaystackContinued.DefaultScrollerView.cs" />
+    <Compile Include="HaystackContinued.DockingPortListView.cs" />
+    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.BodyData.cs" />
+    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.CrewData.cs" />
+    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.cs" />
+    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.DisplayItem.cs" />
+    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.OrbitData.cs" />
+    <Compile Include="ExpandedVesselInfo\HaystackContinued.ExpandedVesselInfo.VesselData.cs" />
+    <Compile Include="HaystackContinued.GroupedScrollerView.cs" />
+    <Compile Include="HaystackContinued.ResizeHandle.cs" />
+    <Compile Include="HaystackContinued.VesselInfoView.cs" />
+    <Compile Include="HaystackScenarioModule.cs" />
+    <Compile Include="HSVesselType.cs" />
+    <Compile Include="InstallChecker.cs" />
+    <Compile Include="Properties\Version.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>AssemblyVersion.tt</DependentUpon>
+      <DependentUpon>Version.tt</DependentUpon>
     </Compile>
-    <Compile Include="Comparers.cs" />
-    <Compile Include="HaystackScenarioModule.cs" />
-    <Compile Include="InstallChecker.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="HSUtils.cs" />
     <Compile Include="HaystackContinued.cs" />
@@ -53,12 +66,7 @@
     <Compile Include="DataManager.cs" />
     <Compile Include="StockSettings.cs" />
     <Compile Include="ToolbarRegistration.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="AssemblyVersion.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>AssemblyVersion.cs</LastGenOutput>
-    </Content>
+    <Compile Include="HaystackContinued.VesselListController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -66,39 +74,39 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>R:\KSP_1.7.2_dev\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\Kerbal Space Program\KSP 1.7.3 Developer\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="ClickThroughBlocker, Version=0.1.6.2, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>R:\KSP_1.7.2_dev\GameData\000_ClickThroughBlocker\Plugins\ClickThroughBlocker.dll</HintPath>
+      <HintPath>..\..\..\Kerbal Space Program\KSP 1.7.3 Developer\GameData\000_ClickThroughBlocker\Plugins\ClickThroughBlocker.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="ToolbarControl">
-      <HintPath>R:\KSP_1.7.2_dev\GameData\001_ToolbarControl\Plugins\ToolbarControl.dll</HintPath>
+      <HintPath>..\..\..\Kerbal Space Program\KSP 1.7.3 Developer\GameData\001_ToolbarControl\Plugins\ToolbarControl.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>R:\KSP_1.7.2_dev\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\Kerbal Space Program\KSP 1.7.3 Developer\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>R:\KSP_1.7.2_dev\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\..\..\Kerbal Space Program\KSP 1.7.3 Developer\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Version.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Version.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
-start /D D:\Users\jbb\github\HaystackContinued /WAIT deploy.bat  $(TargetDir) $(TargetFileName)
-
-if $(ConfigurationName) == Release (
-	start /D D:\Users\jbb\github\HaystackContinued /WAIT buildRelease.bat $(TargetDir) $(TargetFileName)
-)</PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>
-set textTemplatingPath="%25ProgramFiles(x86)%25\Microsoft Visual Studio\2017\Community\Common7\IDE\texttransform.exe"
-
-%25textTemplatingPath%25 "$(ProjectDir)AssemblyVersion.tt</PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
