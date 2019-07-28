@@ -74,23 +74,24 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Kerbal Space Program\KSP 1.7.3 Developer\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>Assemblies\Assembly-CSharp.dll</HintPath>
     </Reference>
-    <Reference Include="ClickThroughBlocker, Version=0.1.6.2, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="ClickThroughBlocker, Version=0.1.7.2, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Kerbal Space Program\KSP 1.7.3 Developer\GameData\000_ClickThroughBlocker\Plugins\ClickThroughBlocker.dll</HintPath>
+      <HintPath>Assemblies\ClickThroughBlocker.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="ToolbarControl">
-      <HintPath>..\..\..\Kerbal Space Program\KSP 1.7.3 Developer\GameData\001_ToolbarControl\Plugins\ToolbarControl.dll</HintPath>
+    <Reference Include="ToolbarControl, Version=0.1.8.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Assemblies\ToolbarControl.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Kerbal Space Program\KSP 1.7.3 Developer\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>Assemblies\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Kerbal Space Program\KSP 1.7.3 Developer\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>Assemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
