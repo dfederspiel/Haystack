@@ -17,3 +17,6 @@ thumbs.db
 .DS_Store
 *.zip
 .vs
+
+*/obj
+*/bin
