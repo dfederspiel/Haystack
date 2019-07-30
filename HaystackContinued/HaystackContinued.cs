@@ -318,8 +318,14 @@ namespace HaystackReContinued
 
                 var previous = Resources.vesselTypesList[i].visible;
 
-                Resources.vesselTypesList[i].visible = GUILayout.Toggle(Resources.vesselTypesList[i].visible,
+
+
+                Resources.vesselTypesList[i].visible = GUILayout.Toggle(previous,
                     new GUIContent(Resources.vesselTypesList[i].icon, typeString), Resources.buttonVesselTypeStyle);
+
+                var evt = Event.current;
+                if(evt.isMouse)
+
 
                 if (previous != Resources.vesselTypesList[i].visible)
                 {
